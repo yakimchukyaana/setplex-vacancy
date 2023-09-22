@@ -3,8 +3,6 @@ package com.setplex.pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
-import java.util.Set;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -23,31 +21,25 @@ public class SetplexPage {
             button = $(".button"),
             errorHint = $(".form-group-errorText");
 
-    public SetplexPage openMainPage(){
-        open("/en");
-
-        return this;
+    public void openMainPage(){
+        open("https://setplex.com/en");
     }
 
     public void checkMainPageText(String text) {
         mainPageContainer.shouldHave(text(text));
     }
 
-    public SetplexPage clickMainPageButton(String text) {
+    public void clickMainPageButton(String text) {
         mainPageButtonsContainer.$(byText(text)).click();
-
-        return this;
     }
 
     public void checkPageHasText(String text) {
         whySetplexPageContainer.shouldHave(Condition.text(text));
     }
 
-    public SetplexPage changeLanguage() {
+    public void changeLanguage() {
         languageNavbar.hover();
         languageDropdown.$(byText("Español")).click();
-
-        return this;
     }
 
     public void checkLanguageIsChanged() {
@@ -58,15 +50,11 @@ public class SetplexPage {
         inquiryForm.shouldBe(visible);
     }
 
-    public SetplexPage clickSubmitButton() {
+    public void clickSubmitButton() {
         button.click();
-
-        return this;
     }
 
-    public SetplexPage checkErrorHintIsVisible() {
+    public void checkErrorHintIsVisible() {
         errorHint.shouldBe(visible);
-
-        return this;
     }
 }
