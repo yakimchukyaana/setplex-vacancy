@@ -4,6 +4,7 @@ import com.setplex.pages.SetplexPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -14,6 +15,7 @@ public class SetplexTests extends TestBase {
     SetplexPage setplexPage = new SetplexPage();
 
     @Test
+    @Tag("mainPage")
     @DisplayName("Main page contains motto")
     void checkMainPageTextTest() {
 
@@ -29,6 +31,7 @@ public class SetplexTests extends TestBase {
 
 
     @Test
+    @Tag("whySetplexPage")
     @DisplayName("Why steplex page contains information about the advantages of the company")
     void whySetplexTest() {
 
@@ -46,6 +49,7 @@ public class SetplexTests extends TestBase {
     }
 
     @Test
+    @Tag("language")
     @DisplayName("Language can be changed to spanish")
     void changeLanguageTest() {
 
@@ -63,6 +67,7 @@ public class SetplexTests extends TestBase {
     }
 
     @Test
+    @Tag("startNowPage")
     @DisplayName("There is form on the Start now page")
     void goToFormTest() {
 
@@ -80,6 +85,7 @@ public class SetplexTests extends TestBase {
     }
 
     @Test
+    @Tag("startNowPage")
     @DisplayName("Empty form can't be submitted")
     void formWithEmptyFieldsTest() {
 

@@ -46,3 +46,27 @@ task setplex_test(type: Test){
         includeTags("setplex")
     }
 }
+
+task mainPage_test(type: Test){
+    useJUnitPlatform{
+        includeTags("mainPage")
+    }
+}
+
+task whySetplexPage_test(type: Test){
+    useJUnitPlatform{
+        includeTags("whySetplexPage")
+    }
+}
+
+task language_test(type: Test){
+    useJUnitPlatform{
+        includeTags("language")
+    }
+}
+
+task startNowPage_test(type: Test){
+    useJUnitPlatform{
+        includeTags("startNowPage")
+    }
+}
