@@ -10,6 +10,7 @@ import static io.qameta.allure.Allure.step;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 
+@Tag("setplex")
 public class StartNowPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
