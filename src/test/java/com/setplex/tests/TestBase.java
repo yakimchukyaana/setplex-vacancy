@@ -17,6 +17,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://setplex.com");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion");
         Configuration.remote =

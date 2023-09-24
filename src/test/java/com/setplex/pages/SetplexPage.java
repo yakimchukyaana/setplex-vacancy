@@ -22,7 +22,7 @@ public class SetplexPage {
             errorHint = $(".form-group-errorText");
 
     public void openMainPage(){
-        open("https://setplex.com/en");
+        open("/en");
     }
 
     public void checkMainPageText(String text) {
