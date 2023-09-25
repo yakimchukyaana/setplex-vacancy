@@ -1,6 +1,8 @@
 package com.setplex.tests;
 
 import com.setplex.pages.SetplexPage;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -17,6 +19,7 @@ public class StartNowPageTests extends TestBase {
 
     @Test
     @Tag("startNowPage")
+    @Severity(SeverityLevel.BLOCKER)
     @DisplayName("There is form on the Start now page")
     void goToFormTest() {
 
@@ -35,6 +38,7 @@ public class StartNowPageTests extends TestBase {
 
     @Test
     @Tag("startNowPage")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Empty form can't be submitted")
     void formWithEmptyFieldsTest() {
 

@@ -1,6 +1,8 @@
 package com.setplex.tests;
 
 import com.setplex.pages.SetplexPage;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -17,6 +19,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("mainPage")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Main page contains motto")
     void checkMainPageTextTest() {
 
