@@ -44,7 +44,7 @@
 To run tests with Jenkins you need to click on the `Build with parameters` button, set the parameters and click `Build`.
 
 <p align="center">  
-<img src="media/screenshots/jenkins_build.png" alt="MainPage" width="950"/></a>  
+<img src="media/screenshots/jenkins_build_page.png" alt="MainPage" width="950"/></a>  
 </p>
 
 ### Parameters
@@ -54,6 +54,8 @@ To run tests with Jenkins you need to click on the `Build with parameters` butto
 - **BROWSER_SIZE** - size of the browser window (1920x1080 by default)
 - **BROWSER_VERSION** - version of the browser (99.0, 100.0 for Chrome, 97.0, 98.0 for Firefox, 85.0, 86.0 for Opera)
 - **STAND_BASE_URL** - base url for tests (<a href="https://setplex.com">https://setplex.com</a> by default)
+- **ENVIRONMENT** - environment for tests (stage by default)
+- **COMMENT** - comment for telegram notifications
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report"></a> Allure reports
 
