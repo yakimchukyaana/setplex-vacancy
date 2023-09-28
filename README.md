@@ -6,6 +6,15 @@
 
 ## Contents
 
+- [Technologies and tools](#technologies-and-tools)
+- [Test cases](#test-cases)
+- [Run tests using Jenkins](#run-tests-using-jenkins)
+- [Allure reports](#allure-report-example)
+- [Integration with Allure TestOps](#allure-test-ops)
+- [Integration with Jira](#jira)
+- [Telegram notifications](#telegram-notifications)
+- [Test video](#test-video)
+
 ## <a name="tecnologies-and-tools"></a>Technologies and tools
 <p align="left">
 <a href="https://www.jetbrains.com/idea/"><img src="media/logos/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
@@ -30,7 +39,7 @@
 - Check that empty form can't be submitted
 - Check text on the Why Setplex page
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/' title="Jenkins build">Jenkins</a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="run-tests-using-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/' title="Jenkins build">Jenkins</a>
 
 To run tests with Jenkins you need to click on the `Build with parameters` button, set the parameters and click `Build`.
 
@@ -46,7 +55,7 @@ To run tests with Jenkins you need to click on the `Build with parameters` butto
 - **BROWSER_VERSION** - version of the browser (99.0, 100.0 for Chrome, 97.0, 98.0 for Firefox, 85.0, 86.0 for Opera)
 - **STAND_BASE_URL** - base url for tests (<a href="https://setplex.com">https://setplex.com</a> by defauld)
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report"></a> Allure report
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report"></a> Allure reports
 
 After running tests allure report is generated. Allure reports can be found on <a href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/">project page in Jenkins</a>.
 Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/13/allure/">this</a>
@@ -66,15 +75,11 @@ Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-ya
 - video
 - history
 
-EXAMPLES
-
 <p align="center">  
 <img src="media/screenshots/allure_details.png" alt="MainPage" width="950"/></a>  
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logos/Allure_TO.svg"><a name="allure-test-ops"></a> Integration with <a href='https://allure.autotests.cloud/project/3684/dashboards'>Allure TestOps</a>
-
-
 
 ### There you can find all information about crucial things such as:
 - <a href="https://allure.autotests.cloud/project/3684/dashboards">dashboards</a>
@@ -82,6 +87,14 @@ EXAMPLES
 - <a href="https://allure.autotests.cloud/project/3684/launches">launches</a>
 - <a href="https://allure.autotests.cloud/project/3684/analytics">analytics</a>
 - etc
+
+<p align="center">
+<img title="Jira" src="media/screenshots/allure_testops_dashboards.png">
+</p>
+
+<p align="center">
+<img title="Jira" src="media/screenshots/allure_testops_test_cases.png">
+</p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://jira.autotests.cloud/browse/HOMEWORK-899'>Jira</a>
 
@@ -103,7 +116,9 @@ EXAMPLES
 
 After each build test results are sent to a `Telegram` chat. It looks like this
 
-screenshot
+<p align="center">
+<img title="Jira" src="media/screenshots/tg_notification.png">
+</p>
 
 ## 🎥 <a name="test-video"></a>Test video
 
