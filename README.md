@@ -50,10 +50,10 @@ To run tests with Jenkins you need to click on the `Build with parameters` butto
 ### Parameters
 
 - **BROWSER** - choose a browser for tests (Chrome by default)
-- **REMOTE_DRIVER_URL** - where tests will be running (<a href="selenoid.autotests.cloud">selenoid.autotests.cloud</a> by defauld)
+- **REMOTE_DRIVER_URL** - where tests will be running (<a href="selenoid.autotests.cloud">selenoid.autotests.cloud</a> by default)
 - **BROWSER_SIZE** - size of the browser window (1920x1080 by default)
 - **BROWSER_VERSION** - version of the browser (99.0, 100.0 for Chrome, 97.0, 98.0 for Firefox, 85.0, 86.0 for Opera)
-- **STAND_BASE_URL** - base url for tests (<a href="https://setplex.com">https://setplex.com</a> by defauld)
+- **STAND_BASE_URL** - base url for tests (<a href="https://setplex.com">https://setplex.com</a> by default)
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report"></a> Allure reports
 
