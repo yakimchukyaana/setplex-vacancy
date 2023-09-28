@@ -9,7 +9,7 @@
 - [Technologies and tools](#technologies-and-tools)
 - [Test cases](#test-cases)
 - [Run tests with Jenkins](#run-tests-with-jenkins)
-- [Allure reports](#allure-report-example)
+- [Allure reports](#allure-report)
 - [Integration with Allure TestOps](#allure-test-ops)
 - [Integration with Jira](#jira)
 - [Telegram notifications](#telegram-notifications)
