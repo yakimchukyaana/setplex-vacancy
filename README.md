@@ -99,7 +99,7 @@ Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-ya
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://jira.autotests.cloud/browse/HOMEWORK-899'>Jira</a>
 
 <p align="center">
-<img title="Jira" src="media/screenshots/jira_task.PNG">
+<img title="Jira" src="media/screenshots/jira_task.png">
 </p>
 
 ### There is information about:
