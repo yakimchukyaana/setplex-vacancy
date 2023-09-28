@@ -8,7 +8,7 @@
 
 - [Technologies and tools](#technologies-and-tools)
 - [Test cases](#test-cases)
-- [Run tests using Jenkins](#run-tests-using-jenkins)
+- [Run tests with Jenkins](#run-tests-with-jenkins)
 - [Allure reports](#allure-report-example)
 - [Integration with Allure TestOps](#allure-test-ops)
 - [Integration with Jira](#jira)
@@ -39,7 +39,7 @@
 - Check that empty form can't be submitted
 - Check text on the Why Setplex page
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="run-tests-using-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/' title="Jenkins build">Jenkins</a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="run-tests-with-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_vacancy-homework/' title="Jenkins build">Jenkins</a>
 
 To run tests with Jenkins you need to click on the `Build with parameters` button, set the parameters and click `Build`.
 
