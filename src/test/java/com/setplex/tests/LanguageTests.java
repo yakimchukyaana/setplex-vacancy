@@ -32,7 +32,7 @@ public class LanguageTests extends TestBase {
             setplexPage.changeLanguage();
         });
         step("Check that the language is changed", () -> {
-            setplexPage.checkLanguageIsChanged();
+            setplexPage.checkLanguageIsChanged("Simple. Poderoso.");
         });
     }
 }

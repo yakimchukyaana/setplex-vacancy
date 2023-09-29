@@ -1,4 +1,4 @@
-# Project for <a href="https://xn--b1agwec.xn--p1ai/">Setplex</a> QA Automation vacancy
+# Project for <a href="https://setplex.com/en/">Setplex</a> QA Automation vacancy
 
 <p align="center">  
 <img src="media/screenshots/setplex_main_page.png" alt="MainPage" width="950"/></a>  

@@ -42,8 +42,8 @@ public class SetplexPage {
         languageDropdown.$(byText("Español")).click();
     }
 
-    public void checkLanguageIsChanged() {
-        mainPageTitle.shouldHave(text("Simple. Poderoso."));
+    public void checkLanguageIsChanged(String text) {
+        mainPageTitle.shouldHave(text(text));
     }
 
     public void checkFormIsVisible() {
