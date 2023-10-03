@@ -17,7 +17,7 @@ public interface WebConfig extends Config {
     String getBrowserSize();
 
     @Key("baseURL")
-    @DefaultValue("https://setplex.com/")
+    @DefaultValue("https://setplex.com")
     String getBaseURL();
 
     @Key("isRemote")
