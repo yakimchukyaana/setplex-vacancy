@@ -21,7 +21,7 @@ public interface WebConfig extends Config {
     String getBaseURL();
 
     @Key("isRemote")
-    @DefaultValue("true")
+    @DefaultValue("false")
     Boolean isRemote();
 
     @Key("remoteURL")
