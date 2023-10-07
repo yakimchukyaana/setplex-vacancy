@@ -21,7 +21,7 @@ public class SetplexPage {
             button = $(".button"),
             errorHint = $(".form-group-errorText");
 
-    public void openMainPage(){
+    public void openMainPage() {
         open("/en");
     }
 
