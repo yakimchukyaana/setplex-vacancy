@@ -4,6 +4,10 @@
 <img src="media/screenshots/setplex_main_page.png" alt="MainPage" width="950"/></a>  
 </p>
 
+>Setplex provides highly-scalable, low latency IPTV/OTT solutions for your video. Since 2006 Setplex has redefined the way video is managed and consumed. They focus on delivering the best UI/UX across all their platforms and providing the best quality.
+> 
+>Source: [Setplex](https://setplex.com/en/our-company.html)
+
 ## Contents
 
 - [Technologies and tools](#technologies-and-tools)

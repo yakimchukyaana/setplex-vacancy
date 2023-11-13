@@ -32,4 +32,24 @@ public class MainPageTests extends TestBase {
             setplexPage.checkMainPageText("Simple. Powerful.");
         });
     }
+
+    @Test
+    @Tag("mainPage")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Main page has crucial buttons")
+    void checkMainPageHasCrucialButtonsTest() {
+
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        step("Open main page", () -> {
+            setplexPage.openMainPage();
+        });
+        step("Check main page has Why Setplex button", () -> {
+            setplexPage.checkMainPageHasWhySetplexButton();
+        });
+        step("Check main page has Start Now button", () -> {
+            setplexPage.checkMainPageHasStartNowButton();
+        });
+
+    }
 }

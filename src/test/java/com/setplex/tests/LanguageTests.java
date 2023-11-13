@@ -20,6 +20,25 @@ public class LanguageTests extends TestBase {
     @Test
     @Tag("language")
     @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Language change dropdown appears")
+    void languageChangeMenuAppearsTest(){
+
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        step("Open main page", () -> {
+            setplexPage.openMainPage();
+        });
+        step("Move mouse to change language button", () -> {
+            setplexPage.changeLanguageHover();
+        });
+        step("Check that language dropdown is visible", () -> {
+            setplexPage.checkLanguageDropdownIsVisible();
+        });
+    }
+
+    @Test
+    @Tag("language")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Language can be changed to spanish")
     void changeLanguageTest() {
 
