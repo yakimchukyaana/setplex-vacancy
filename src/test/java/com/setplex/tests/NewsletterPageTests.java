@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
+@Tag("setplex")
 public class NewsletterPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();

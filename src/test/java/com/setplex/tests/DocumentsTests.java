@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tag("documents")
+@Tag("setplex")
 public class DocumentsTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
