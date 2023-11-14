@@ -13,10 +13,10 @@ public class WebConfigProject {
     }
 
     public void webConfig() {
-        Configuration.browserSize = webConfig.getBrowserSize();
         Configuration.baseUrl = webConfig.getBaseURL();
         Configuration.browser = webConfig.getBrowser().toString();
         Configuration.browserVersion = webConfig.getBrowserVersion();
+        Configuration.browserSize = webConfig.getBrowserSize();
         Configuration.pageLoadStrategy = "eager";
 
         if (webConfig.isRemote()) {

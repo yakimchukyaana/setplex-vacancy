@@ -46,7 +46,7 @@ public class DocumentsTests extends TestBase {
         step("Open main page", () -> {
             setplexPage.openMainPage();
         });
-        step("Click Legal button", () -> {
+        step("Click PrivacyPolicy button", () -> {
             setplexPage.clickPrivacyPolicyButton();
         });
         step("Check Privacy Policy page contains Legal Documents header", () -> {
