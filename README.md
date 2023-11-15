@@ -20,7 +20,7 @@
 - [Test video](#test-video)
 
 ## <a name="tecnologies-and-tools"></a>Technologies and tools
-<p align="left">
+<p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="media/logos/intellijIDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
 <a href="https://www.java.com/"><img src="media/logos/java.svg" width="50" height="50" alt="Java" title="Java"/></a>
 <a href="https://github.com/"><img src="media/logos/gitHub.svg" width="50" height="50" alt="Github" title="GitHub"/></a>

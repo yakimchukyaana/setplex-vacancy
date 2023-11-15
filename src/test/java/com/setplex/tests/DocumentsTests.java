@@ -2,8 +2,7 @@ package com.setplex.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.setplex.pages.SetplexPage;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -12,6 +11,10 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 @Tag("setplex")
+@Owner("Yana Yakimchuk")
+@Epic(value = "Check Setplex website")
+@Story("Pages functionality")
+@Feature(value = "Page info")
 public class DocumentsTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
