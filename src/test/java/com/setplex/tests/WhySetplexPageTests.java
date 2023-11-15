@@ -16,6 +16,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Page info")
+@DisplayName("Why Setplex page contains correct info")
 public class WhySetplexPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
@@ -35,7 +36,7 @@ public class WhySetplexPageTests extends TestBase {
             setplexPage.clickMainPageButton("Why Setplex");
         });
         step("Check that the text on Why Setplex page is correct", () -> {
-            setplexPage.checkPageHasText("Why Setplex");
+            setplexPage.checkPageHasText("We are pioneers in the IPTV/OTT industry");
         });
     }
 }

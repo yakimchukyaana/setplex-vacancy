@@ -16,6 +16,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Page info")
+@DisplayName("Main mage contains correct info and working buttons")
 public class MainPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();

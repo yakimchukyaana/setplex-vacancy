@@ -16,6 +16,7 @@ import static io.qameta.allure.Allure.step;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Newsletter forms")
+@DisplayName("Newsletter page and form are correct")
 public class NewsletterPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();

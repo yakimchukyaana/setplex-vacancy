@@ -15,6 +15,7 @@ import static io.qameta.allure.Allure.step;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Page info")
+@DisplayName("Documents pages contain correct information")
 public class DocumentsTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();

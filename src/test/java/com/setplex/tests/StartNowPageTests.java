@@ -16,6 +16,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Page info")
+@DisplayName("Start Now page contains correct info and form")
 public class StartNowPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();

@@ -16,6 +16,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 @Epic(value = "Check Setplex website")
 @Story("Pages functionality")
 @Feature(value = "Language change")
+@DisplayName("Language can be changed")
 public class LanguageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
