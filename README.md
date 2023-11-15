@@ -129,7 +129,7 @@ Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-ya
 After each build test results are sent to a `Telegram` chat. It looks like this
 
 <p align="center">
-<img title="Telegram notification" src="media/screenshots/tgNotification.png">
+<img width="50%" title="Telegram notification" src="media/screenshots/tgNotification.png">
 </p>
 
 ## 🎥 <a name="test-video"></a>Test video
