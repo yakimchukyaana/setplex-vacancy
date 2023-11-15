@@ -49,7 +49,7 @@
 - Check that newsletter empty form can't be submitted
 - Check that newsletter with incorrect email can't be submitted
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="run-tests-with-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_setplex-ui/' title="Jenkins build">Jenkins</a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/jenkins.svg"><a name="run-tests-with-jenkins"></a> Run tests with <a href='https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21_setplex-ui/' title="Jenkins build">Jenkins</a>
 
 To run tests with Jenkins you need to click on the `Build with parameters` button, set the parameters and click `Build`.
 
@@ -108,7 +108,7 @@ Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-ya
 <img title="Jira" src="media/screenshots/allureTestOpsTestCases.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://jira.autotests.cloud/browse/HOMEWORK-899'>Jira</a>
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/jira.svg"><a name="jira"></a> Integration with <a href='https://jira.autotests.cloud/browse/HOMEWORK-899'>Jira</a>
 
 <p align="center">
 <img title="Jira" src="media/screenshots/jiraTask.png">
@@ -124,7 +124,7 @@ Allure reports look like <a href="https://jenkins.autotests.cloud/job/student-ya
 - create date
 - etc
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
 
 After each build test results are sent to a `Telegram` chat. It looks like this
 
