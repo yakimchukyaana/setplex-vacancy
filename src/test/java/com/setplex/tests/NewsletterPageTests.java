@@ -1,6 +1,7 @@
 package com.setplex.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.setplex.pages.NewsletterPage;
 import com.setplex.pages.SetplexPage;
 import com.setplex.utils.TestData;
 import io.qameta.allure.*;
@@ -20,6 +21,7 @@ import static io.qameta.allure.Allure.step;
 public class NewsletterPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
+    NewsletterPage newsletterPage = new NewsletterPage();
     TestData testData = new TestData();
 
     @Test
@@ -37,7 +39,8 @@ public class NewsletterPageTests extends TestBase {
             setplexPage.clickNewsletterButton();
         });
         step("Check header", () -> {
-            setplexPage.checkNewsLetterPageHasCorrectHeader("Welcome to our newsletter signup");
+            //setplexPage.checkNewsLetterPageHasCorrectHeader("Welcome to our newsletter signup");
+            newsletterPage.checkNewsLetterPageHasCorrectHeader("Welcome to our newsletter signup");
         });
     }
 
@@ -56,13 +59,13 @@ public class NewsletterPageTests extends TestBase {
             setplexPage.clickNewsletterButton();
         });
         step("Click submit button", () -> {
-            setplexPage.clickSubmitButton();
+            newsletterPage.clickSubmitButton();
         });
         step("Check that error is visible", () -> {
-            setplexPage.checkErrorIsVisible();
+            newsletterPage.checkErrorIsVisible();
         });
         step("Check that error has correct text", () -> {
-            setplexPage.checkErrorHasCorrectText("This field is required");
+            newsletterPage.checkErrorHasCorrectText("This field is required");
         });
     }
 
@@ -81,16 +84,16 @@ public class NewsletterPageTests extends TestBase {
             setplexPage.clickNewsletterButton();
         });
         step("Set incorrect email", () -> {
-            setplexPage.setEmail(testData.generateRandomIncorrectEmail());
+            newsletterPage.setEmail(testData.generateRandomIncorrectEmail());
         });
         step("Click submit button", () -> {
-            setplexPage.clickSubmitButton();
+            newsletterPage.clickSubmitButton();
         });
         step("Check that error is visible", () -> {
-            setplexPage.checkErrorIsVisible();
+            newsletterPage.checkErrorIsVisible();
         });
         step("Check that error has correct text", () -> {
-            setplexPage.checkErrorHasCorrectText("Please enter a valid email address");
+            newsletterPage.checkErrorHasCorrectText("Please enter a valid email address");
         });
     }
 }

@@ -1,6 +1,7 @@
 package com.setplex.tests;
 
 import com.setplex.pages.SetplexPage;
+import com.setplex.pages.StartNowPage;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
@@ -20,6 +21,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 public class StartNowPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
+    StartNowPage startNowPage = new StartNowPage();
 
     @Test
     @Tag("startNowPage")
@@ -36,7 +38,8 @@ public class StartNowPageTests extends TestBase {
             setplexPage.clickMainPageButton("Start Now");
         });
         step("Check that there is form on Start Now page", () -> {
-            setplexPage.checkFormIsVisible();
+            //setplexPage.checkFormIsVisible();
+            startNowPage.checkFormIsVisible();
         });
     }
 
@@ -55,10 +58,12 @@ public class StartNowPageTests extends TestBase {
             setplexPage.clickMainPageButton("Start Now");
         });
         step("Click Submit button", () -> {
-            setplexPage.clickButton();
+//            setplexPage.clickButton();
+            startNowPage.clickButton();
         });
         step("Check that there are errors near blank fields", () -> {
-            setplexPage.checkErrorHintIsVisible();
+//            setplexPage.checkErrorHintIsVisible();
+            startNowPage.checkErrorHintIsVisible();
         });
     }
 }

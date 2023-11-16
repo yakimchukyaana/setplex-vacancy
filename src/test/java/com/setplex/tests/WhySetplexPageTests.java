@@ -1,6 +1,7 @@
 package com.setplex.tests;
 
 import com.setplex.pages.SetplexPage;
+import com.setplex.pages.WhySetplexPage;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
@@ -20,6 +21,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 public class WhySetplexPageTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
+    WhySetplexPage whySetplexPage = new WhySetplexPage();
 
     @Test
     @Tag("whySetplexPage")
@@ -36,7 +38,7 @@ public class WhySetplexPageTests extends TestBase {
             setplexPage.clickMainPageButton("Why Setplex");
         });
         step("Check that the text on Why Setplex page is correct", () -> {
-            setplexPage.checkPageHasText("We are pioneers in the IPTV/OTT industry");
+            whySetplexPage.checkPageHasCorrectText("We are pioneers in the IPTV/OTT industry");
         });
     }
 }

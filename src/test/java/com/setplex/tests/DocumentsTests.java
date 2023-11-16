@@ -1,6 +1,7 @@
 package com.setplex.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.setplex.pages.DocumentsPage;
 import com.setplex.pages.SetplexPage;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -19,6 +20,7 @@ import static io.qameta.allure.Allure.step;
 public class DocumentsTests extends TestBase {
 
     SetplexPage setplexPage = new SetplexPage();
+    DocumentsPage documentsPage = new DocumentsPage();
 
     @Test
     @Tag("documents")
@@ -35,7 +37,7 @@ public class DocumentsTests extends TestBase {
             setplexPage.clickLegalButton();
         });
         step("Check Legal page contains Legal Documents header", () -> {
-            setplexPage.checkLegalPageContainsCorrectInformation("Legal Documents");
+            documentsPage.checkLegalPageContainsCorrectInformation("Legal Documents");
         });
     }
 
@@ -50,11 +52,11 @@ public class DocumentsTests extends TestBase {
         step("Open main page", () -> {
             setplexPage.openMainPage();
         });
-        step("Click PrivacyPolicy button", () -> {
+        step("Click Privacy Policy button", () -> {
             setplexPage.clickPrivacyPolicyButton();
         });
-        step("Check Privacy Policy page contains Legal Documents header", () -> {
-            setplexPage.checkPrivacyPolicyPageContainsCorrectInformation("Privacy Policy for Setplex");
+        step("Check Privacy Policy page contains Privacy Policy header", () -> {
+            documentsPage.checkPrivacyPolicyPageContainsCorrectInformation("Privacy Policy for Setplex");
         });
     }
 }
