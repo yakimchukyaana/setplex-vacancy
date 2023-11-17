@@ -1,6 +1,5 @@
 package com.setplex.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
@@ -13,15 +12,17 @@ public class SetplexPage {
     private final SelenideElement
             mainPageContainer = $(".title-btns-container"),
             mainPageButtonsContainer = $(".btns-container"),
-            whySetplexPageContainer = $(".why-one"),
+            whySetplexButton = mainPageButtonsContainer.$(byText("Why Setplex")),
+            startNowButton = mainPageButtonsContainer.$(byText("Start Now")),
             languageNavbar = $("#navbarDropdownLanguage"),
             languageDropdown = $("[aria-labelledby=navbarDropdownLanguage]"),
             mainPageTitle = $(".title-block"),
-            inquiryForm = $(".inquiry-form"),
-            button = $(".button"),
-            errorHint = $(".form-group-errorText");
+            footerContainer = $(".text-md-center"),
+            legalButton = footerContainer.$(byText("LEGAL")),
+            privacyPolicyButton = footerContainer.$(byText("Privacy Policy")),
+            newsletterButton = $("a[href='newsletter.html']");
 
-    public void openMainPage(){
+    public void openMainPage() {
         open("/en");
     }
 
@@ -29,12 +30,24 @@ public class SetplexPage {
         mainPageContainer.shouldHave(text(text));
     }
 
+    public void checkMainPageHasWhySetplexButton() {
+        whySetplexButton.shouldBe(visible);
+    }
+
+    public void checkMainPageHasStartNowButton() {
+        startNowButton.shouldBe(visible);
+    }
+
     public void clickMainPageButton(String text) {
         mainPageButtonsContainer.$(byText(text)).click();
     }
 
-    public void checkPageHasText(String text) {
-        whySetplexPageContainer.shouldHave(Condition.text(text));
+    public void changeLanguageHover() {
+        languageNavbar.hover();
+    }
+
+    public void checkLanguageDropdownIsVisible() {
+        languageDropdown.shouldBe(visible);
     }
 
     public void changeLanguage() {
@@ -46,15 +59,15 @@ public class SetplexPage {
         mainPageTitle.shouldHave(text(text));
     }
 
-    public void checkFormIsVisible() {
-        inquiryForm.shouldBe(visible);
+    public void clickLegalButton() {
+        legalButton.scrollIntoView(false).click();
     }
 
-    public void clickSubmitButton() {
-        button.click();
+    public void clickPrivacyPolicyButton() {
+        privacyPolicyButton.scrollIntoView(false).click();
     }
 
-    public void checkErrorHintIsVisible() {
-        errorHint.shouldBe(visible);
+    public void clickNewsletterButton() {
+        newsletterButton.scrollIntoView(false).click();
     }
 }
