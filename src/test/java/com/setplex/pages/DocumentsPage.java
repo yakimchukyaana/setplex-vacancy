@@ -13,6 +13,7 @@ public class DocumentsPage {
     public void checkLegalPageContainsCorrectInformation(String text) {
         legalPageHeader.shouldHave(text(text));
     }
+
     public void checkPrivacyPolicyPageContainsCorrectInformation(String text) {
         privacyPolicyPageHeader.shouldHave(text(text));
     }

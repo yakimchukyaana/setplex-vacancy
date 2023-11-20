@@ -58,11 +58,9 @@ public class StartNowPageTests extends TestBase {
             setplexPage.clickMainPageButton("Start Now");
         });
         step("Click Submit button", () -> {
-//            setplexPage.clickButton();
             startNowPage.clickButton();
         });
         step("Check that there are errors near blank fields", () -> {
-//            setplexPage.checkErrorHintIsVisible();
             startNowPage.checkErrorHintIsVisible();
         });
     }
