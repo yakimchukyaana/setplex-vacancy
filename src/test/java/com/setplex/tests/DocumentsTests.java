@@ -26,7 +26,7 @@ public class DocumentsTests extends TestBase {
     @Tag("documents")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Legal page contains information about Legal Documents")
-    void legalPageContainsCorrectInformation() {
+    void legalPageTextTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -45,7 +45,7 @@ public class DocumentsTests extends TestBase {
     @Tag("documents")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Privacy Policy page contains information about Privacy Policy")
-    void privacyPolicyPageContainsCorrectInformation1() {
+    void privacyPolicyTextTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

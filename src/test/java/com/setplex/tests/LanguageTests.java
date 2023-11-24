@@ -25,7 +25,7 @@ public class LanguageTests extends TestBase {
     @Tag("language")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Language change dropdown appears")
-    void languageChangeMenuAppearsTest() {
+    void languageMenuAppearsTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

@@ -25,7 +25,7 @@ public class MainPageTests extends TestBase {
     @Tag("mainPage")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Main page contains motto")
-    void checkMainPageTextTest() {
+    void mainPageMottoTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -41,7 +41,7 @@ public class MainPageTests extends TestBase {
     @Tag("mainPage")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Main page has crucial buttons")
-    void checkMainPageHasCrucialButtonsTest() {
+    void crucialButtonsTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

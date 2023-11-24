@@ -27,7 +27,7 @@ public class WhySetplexPageTests extends TestBase {
     @Tag("whySetplexPage")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Why steplex page contains information about the advantages of the company")
-    void whySetplexTest() {
+    void setplexAdvantagesTest() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

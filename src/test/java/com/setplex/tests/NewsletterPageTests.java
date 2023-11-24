@@ -39,7 +39,6 @@ public class NewsletterPageTests extends TestBase {
             setplexPage.clickNewsletterButton();
         });
         step("Check header", () -> {
-            //setplexPage.checkNewsLetterPageHasCorrectHeader("Welcome to our newsletter signup");
             newsletterPage.checkNewsLetterPageHasCorrectHeader("Welcome to our newsletter signup");
         });
     }
